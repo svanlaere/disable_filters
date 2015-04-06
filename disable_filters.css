@@ -1,0 +1,22 @@
+#body_plugin_disable_filters fieldset {
+	border: #D8E0EC solid 1px;
+}
+#body_plugin_disable_filters label { 
+	display: block;
+	margin: 0.5em 0.6em;
+	/*font-style: italic;*/
+	color: #D8E0EC;
+	line-height: 1;
+	vertical-align: top;
+}
+#body_plugin_disable_filters input[type="checkbox"]:checked + span {
+	color: #000;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1;
+	vertical-align: top;
+}
+#body_plugin_disable_filters label:hover{
+	cursor:pointer;
+	color:#000;
+}
