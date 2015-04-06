@@ -1,2 +1,2 @@
 # disable-filters
-Disables filters for specific partnames
+Plugin for Wolf CMS that disables filters for specific partnames
