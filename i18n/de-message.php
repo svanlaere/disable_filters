@@ -9,7 +9,7 @@ if (!defined('IN_CMS')) {
  */
 
 return array(
-    'Disable filters' => '',
-	'Disables filters for specific partnames' => '',
-    'Select the part for which you want to disable the filters' => '',
+    'Disable filters' => 'Filter deaktivieren',
+    'Disables filters for specific partnames' => 'Filter für spezifische Seitenparts deaktivieren',
+    'Select the part for which you want to disable the filters' => 'Wähle einen Seitenpart für den die Filter deaktiviert werden sollen',
 );
