@@ -13,7 +13,7 @@ class DisableFiltersController extends PluginController
         $this->settings   = $this->isJSON($settings) ? json_decode($settings, true) : $settings;
         $this->page_parts = Record::find(array(
             'select' => "DISTINCT(name)",
-            'from' => "page_part"
+            'from'   => TABLE_PREFIX . "page_part"
         ));
     }
     
