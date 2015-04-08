@@ -11,10 +11,19 @@ class DisableFiltersController extends PluginController
         $this->setLayout('backend');
         $settings         = Plugin::getSetting('parts', 'disable_filters');
         $this->settings   = $this->isJSON($settings) ? json_decode($settings, true) : $settings;
-        $this->page_parts = Record::find(array(
-            'select' => "DISTINCT(name)",
-            'from'   => TABLE_PREFIX . "page_part"
-        ));
+		$this->page_parts = $this->get_distinct_parts();
+    }
+	
+    function get_distinct_parts()
+    {
+
+		// if available use the Record:find method (Wolf CMS 0.8.0 and higher)
+        if (method_exists('Record', 'find') && is_callable(array('Record','find'))) {
+            $result = Record::find(array('select' => "DISTINCT(name)",'from' => TABLE_PREFIX . "page_part"));
+        } else {
+            $result = Record::query("SELECT DISTINCT(name) FROM " . TABLE_PREFIX . "page_part")->fetchAll(PDO::FETCH_OBJ);
+        }
+        return $result;
     }
     
     function isJSON($string)

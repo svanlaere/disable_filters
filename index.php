@@ -9,7 +9,7 @@ Plugin::setInfos(array(
     'title' => __('Disable filters'),
     'description' => __('Disables filters for specific partnames'),
     'version' => '0.0.1',
-    'require_wolf_version' => '0.8.0'
+    'require_wolf_version' => '0.7.7'
 ));
 
 Plugin::addController('disable_filters', __('Disable filters'), 'admin_view', false);
