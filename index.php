@@ -8,8 +8,11 @@ Plugin::setInfos(array(
     'id' => 'disable_filters',
     'title' => __('Disable filters'),
     'description' => __('Disables filters for specific partnames'),
-    'version' => '0.0.1',
-	'website' => 'https://github.com/svanlaere/disable_filters',
+    'version' => '0.1.0',
+    'license'               => 'GPLv3',
+    'author'                => 'svanlaere',
+    'website' => 'http://svanlaere.nl/',
+    'update_url' => 'http://svanlaere.nl/plugin-versions.xml',
     'require_wolf_version' => '0.7.7'
 ));
 
