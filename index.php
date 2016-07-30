@@ -9,7 +9,7 @@ Plugin::setInfos(array(
     'title' => __('Disable filters'),
     'description' => __('Disables filters for specific partnames'),
     'version' => '0.1.0',
-    'license' => 'GPLv3',
+    'license' => 'MIT',
     'author' => 'svanlaere',
     'website' => 'http://svanlaere.nl/',
     'update_url' => 'http://svanlaere.nl/plugin-versions.xml',
